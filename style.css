@@ -34,7 +34,11 @@ h1 {
     color: #235415;
     display: inline-block;
     font: 700 4em/.8em Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
-    /*line-height: 0.8;*/
     border-bottom: 6px solid #643719;
     border-radius: .1em;
+}
+
+h2 {
+    color: #643719;
+    font: 700 2em Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
 }
