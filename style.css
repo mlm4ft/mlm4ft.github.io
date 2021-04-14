@@ -87,6 +87,6 @@ ul.navbar {
         padding: .1em 0 .2em;
         text-align: center;
     }
-        ul.navbar li a:visited {
-            color: #f6f8f6;
+        ul.navbar li a {
+            color: inherit;
         }
