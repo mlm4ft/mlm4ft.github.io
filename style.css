@@ -40,6 +40,11 @@ header {
 
 /*     TAGS     */
 
+a {
+    font: 600 .95em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
+    color: #225315;
+}
+
 blockquote {
     background-color: #f6f8f6;
     border: 2px solid #643719;
