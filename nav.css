@@ -3,6 +3,7 @@ ul.navbar {
     display: flex;
     justify-content: space-around;
     background-color: #643719;
+    border-radius: .3em;
 }
     ul.navbar li {
         display: flex;
@@ -13,5 +14,6 @@ ul.navbar {
         text-align: center;
     }
         ul.navbar li a {
+            text-decoration: none;
             color: inherit;
         }
