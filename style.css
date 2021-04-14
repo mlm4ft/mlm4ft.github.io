@@ -28,7 +28,6 @@ footer {
     color: #f6f8f6;
     font: 500 .75em/2em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
     letter-spacing: .5px;
-    text-align: center;
     margin-top: 2em;
 }
 
@@ -36,6 +35,10 @@ header {
     position: sticky;
     top: 0;
     background-color: #f6f8f6;
+}
+
+main p {
+    text-align: justify;
 }
 
 /*     TAGS     */
@@ -71,10 +74,6 @@ h1 {
 h2 {
     color: #643719;
     font: 700 2em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
-}
-
-p {
-    text-align: justify;
 }
 
 span.bshift {
