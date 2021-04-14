@@ -32,6 +32,12 @@ footer {
     margin-top: 2em;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: #f6f8f6;
+}
+
 /*     TAGS     */
 
 blockquote {
