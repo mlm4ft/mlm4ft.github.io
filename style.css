@@ -43,6 +43,7 @@ header {
 blockquote {
     background-color: #f6f8f6;
     border: 2px solid #643719;
+    border-radius: .3em;
     padding: .5em;
     font: italic 1em/1.5em Bitter,Georgia, serif;
 }
@@ -65,6 +66,10 @@ h1 {
 h2 {
     color: #643719;
     font: 700 2em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
+}
+
+p {
+    text-align: justify;
 }
 
 span.bshift {
