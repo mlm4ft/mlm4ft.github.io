@@ -73,20 +73,3 @@ span.bshift {
     span.bshift:hover {
         vertical-align: text-bottom;
     }
-
-ul.navbar {
-    padding-inline-start: 0;
-}
-    ul.navbar li {
-        display: inline-block;
-        width: 20%;
-        list-style-type: none;
-        background-color: #643719;
-        font: 700 1em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
-        color: #f6f8f6;
-        padding: .1em 0 .2em;
-        text-align: center;
-    }
-        ul.navbar li a {
-            color: inherit;
-        }
