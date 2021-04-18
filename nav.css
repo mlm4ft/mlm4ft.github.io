@@ -3,7 +3,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     background-color: #643719;
-    border-radius: .2px;
+    border-radius: 2px;
 }
     nav ul li {
         display: flex;
