@@ -50,6 +50,8 @@ main p {
         color: #f6f8f6;
         box-shadow: 3px 3px 0 #225315;
         float:left;
+        border: 1px solid #643719;
+        border-radius: 3px;
     }
     main p:not(:first-of-type) {
         text-indent: 2em;
