@@ -37,6 +37,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #f6f8f6;
+    z-index:10;
 }
 
 main p {
