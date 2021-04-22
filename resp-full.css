@@ -1,0 +1,10 @@
+#gridwrap {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+}
+    #gridwrap aside {
+        display: flex;
+        flex-direction: column;
+    }

@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
    <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>About Me</title>
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="nav.css">
+   <link rel="stylesheet" media="screen and (min-width:960px)" href="resp-full.css">
+   <link rel="stylesheet" media="screen and (max-width:959px)" href="resp-tablet.css">
 </head>
 <body>
     <header>
@@ -23,17 +24,24 @@
                 </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
-                        <li><a href="#contact.html">Contact me</a></li>
+            <li><a href="#contact.html">Contact me</a></li>
         </ul>
     </nav>
     <main>
         <h2>About me</h2>
-        <blockquote><q>The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.</q><br />
-        —Anaïs Nin</blockquote>
-        <p>I am in the final semester of my program, and will graduate in May with a Master’s of Library and Information Science. My work for the MLIS has focused largely on systems administration and electronic resources. But I’ve also been very interested in the theoretical aspects of library work. I’ve spent a lot of time thinking about how libraries anchor their communities. I hope to continue pursuing that question throughout my career.</p>
-        <p style="text-indent:0; margin: 16px 0;">
-        Please see <a href="McDowallResume.pdf">my résumé</a>.
-        </p>
+        <div id="gridwrap">
+            <aside>
+                <img src="HeadshotBW.jpg">
+                <blockquote><q>The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.</q><br />
+                —Anaïs Nin</blockquote>
+            </aside>
+            <div id="copy">
+                <p>I am in the final semester of my program, and will graduate in May with a Master’s of Library and Information Science. My work for the MLIS has focused largely on systems administration and electronic resources. But I’ve also been very interested in the theoretical aspects of library work. I’ve spent a lot of time thinking about how libraries anchor their communities. I hope to continue pursuing that question throughout my career.</p>
+                <p style="text-indent:0; margin: 16px 0;">
+                Please see <a href="McDowallResume.pdf">my résumé</a>.
+                </p>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; Copyright 2021 Matt McDowall. [ mlm4ft@mail.missouri.edu ]</p>
