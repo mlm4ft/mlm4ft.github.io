@@ -5,8 +5,60 @@
    <title>About Me</title>
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="nav.css">
-   <link rel="stylesheet" media="screen and (min-width:960px)" href="resp-full.css">
-   <link rel="stylesheet" media="screen and (max-width:959px)" href="resp-tablet.css">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+    @media screen and (min-width: 970px) { /*full size*/
+        #gridwrap {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 3fr 2fr;
+            grid-template-rows: 1fr;
+        }
+            #gridwrap aside {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 400px 1fr;
+            }
+    }
+
+    @media screen and (max-width: 969px) { /*tablet*/
+        #gridwrap {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 1fr;
+        }
+            #gridwrap aside {
+                display: grid;
+                grid-gap: 30px;
+                grid-template-columns: 400px 1fr;
+                grid-template-rows: 1fr;
+            }
+
+        blockquote {
+            margin: auto 0;
+        }
+
+    @media screen and (max-width: 479px) { /*phone*/
+        #gridwrap {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 1fr;
+        }
+            #gridwrap aside {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 400px 1fr;
+            }
+
+        blockquote {
+            margin: auto 0;
+        }
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -32,7 +84,7 @@
         <div id="gridwrap">
             <aside>
                 <img src="https://raw.githubusercontent.com/mlm4ft/mlm4ft.github.io/5b7ebf9aa4ef4091b70ba680e9dce87e94219bfc/HeadshotBW.jpg">
-                <blockquote><q>The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.</q><br />
+                <blockquote><q>The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.</q><br>
                 —Anaïs Nin</blockquote>
             </aside>
             <div id="copy">
