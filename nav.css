@@ -1,11 +1,11 @@
-nav ul {
+nav ul.navbar {
     padding: 0;
     display: flex;
     justify-content: space-around;
     background-color: #643719;
     border-radius: 2px;
 }
-    nav ul li {
+    nav ul.navbar li {
         display: flex;
         list-style-type: none;
         font: 700 1em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
@@ -15,13 +15,13 @@ nav ul {
         border-top: 1px solid #643719;
         border-bottom: 1px solid #643719;
     }
-        nav ul li:hover {
+        nav ul.navbar li:hover {
             background-color:#f6f8f6;
             color:#643719;
             font-weight: 700;
         }
 
-        nav ul li a {
+        nav ul.navbar li a {
             text-decoration: none;
             color: inherit;
         }
@@ -40,5 +40,53 @@ nav ul>li ul {
     display:none;
 }
 nav ul>li:hover>ul {
+    display: block;
+}
+
+
+
+ul.iconbar {
+    display: flex;
+    padding: 0;
+}
+    ul.iconbar>li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0 .5em;
+    }
+        ul.iconbar>li:first-of-type {
+            padding-left: 0;
+        }
+        ul.iconbar li a {
+            color: inherit;
+        }
+    @media screen and (max-width: 600px) { /* rough width of icon bar */
+        ul.iconbar img {
+            width: 13vw;
+            height: 13vw;
+        }
+    }
+ul.dropdown {
+    display:none;
+    position:absolute;
+    width: 120%;
+    margin-left: -10%;
+    margin-top: 0;
+    padding: .3em;
+    padding-inline-start: 0;
+    text-align: center;
+    left: 0;
+}
+    ul.dropdown>li {
+        display: block;
+        list-style-type: none;
+        padding: .25em;
+        border: 3px solid #f6f8f6;
+        border-radius: .3em;
+        font: 700 1em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
+        background-color: #643719;
+        color: #f6f8f6;
+    }
+ul.iconbar li:hover>ul {
     display: block;
 }

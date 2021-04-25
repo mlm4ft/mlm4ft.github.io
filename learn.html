@@ -5,31 +5,89 @@
    <title>Experience</title>
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="nav.css">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <style>
+    @media screen and (min-width: 970px) { /*full size*/
+
+    }
+    @media screen and (max-width: 969px) { /*tablet*/
+        .row {
+            flex-direction: column;
+        }
+        .col {
+            margin: .2em 0;
+        }
+    }
+    @media screen and (max-width: 479px) { /*phone*/
+
+    }
+   </style>
 </head>
 <body>
     <header>
-        <h1>Matt M<span class="bshift">c</span>Dowall</h1>
+        <h1>Matt&nbsp;M<span class="bshift">c</span>Dowall</h1>
     </header>
     <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="#learn.html">Experience</a>
+        <ul class="iconbar">
+            <li><a href="index.html"><img src="gr-home.png" class="icon" title="Home" alt="Home"></a></li>
+            <li><a href="about.html"><img src="gr-about.png" class="icon" title="About me" alt="About me"></a></li>
+            <li><a href="learn.html"><img src="gr-experience.png" class="icon" title="Experience" alt="Experience"></a>
                 <ul class="dropdown">
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
+                    <li><a href="learn.html#Job1">Systems Librarian</a></li>
+                    <li><a href="learn.html#Job2">Tech Svcs Asst</a></li>
+                    <li><a href="learn.html#Job3">IT Coordinator</a></li>
                 </ul>
             </li>
-            <li><a href="#reflection.html">Reflection</a></li>
-            <li><a href="#contact.html">Contact me</a></li>
+            <li><a href="reflection.html"><img src="gr-reflection.png" class="icon" title="Personal reflection" alt="Personal reflection"></a></li>
+            <li><a href="#contact.html"><img src="gr-contact.png" class="icon" title="Contact me" alt="Contact me"></a></li>
         </ul>
     </nav>
     <main>
+        <h2>Experience</h2>
+        <div class="exp_head">
+            <div class="row">
+                <div class="col"><a name="Job1"><strong>Information Systems Support Specialist</strong></a></div>
+                <div class="col">2018–Present</div>
+            </div>
+            <div class="row">
+                <div class="col">Calvin T. Ryan Library</div>
+                <div class="col">University of Nebraska—Kearney</div>
+            </div>
+        </div>
+        <p class="illuminate">
+        I am currently the Library Services Platform (LSP) administrator at the University of Nebraska—Kearney (UNK) library. This I run the database and systems which are the library’s back end. The LSP provides the online catalog, as well as the ability to do things like checking items in and out. It also delivers access to electronic journals, eBooks, and similar resources. During my three years in this position, our library has migrated from one LSP to another. This has put me front and center for one of the most significant transitions a library can make. At the same time, we have merged into a consortium with the libraries on the university’s other campuses. This has significantly deepened my ability to work collaboratively. It has also given me the opportunity to take a leadership role in one of the project working groups, and as a liaison for our campus library. I hope to continue developing and growing in this position over the coming years.
+        </p>
 
+        <div class="exp_head">
+            <div class="row">
+                <div class="col"><a name="Job2"><strong>Technology Services Assistant</strong></a></div>
+                <div class="col">2013–2018</div>
+            </div>
+            <div class="row">
+                <div class="col">Campus Resource Centers</div>
+                <div class="col">Central Community College<br>Grand Island, NE</div>
+            </div>
+        </div>
+        <p class="illuminate">
+        My previous position—my first time working in a library—was a loosely defined “technical” position at Central Community College. I administered the backend systems for all three of the college’s campus libraries. Being in a very small library, I also served most traditional library functions (circulation, reference, cataloging, etc.). This was a good introduction to librarianship broadly, and also to the specifics of library systems administration. Thanks to the technical skill I brought to the job, I was able to implement numerous improvements to the workflow. I systematized the process of patron notification, and brought it completely online. I also automated patron account creation, which is an ongoing challenge for academic libraries. This position also gave me a thorough introduction to the process of extracting data from library systems.
+        </p>
+
+        <div class="exp_head">
+            <div class="row">
+                <div class="col"><a name="Job3"><strong>Instructional Technology Coordinator</strong></a></div>
+                <div class="col">2004–2013</div>
+            </div>
+            <div class="row">
+                <div class="col">College of Natural &amp; Social Sciences</div>
+                <div class="col">University of Nebraska—Kearney</div>
+            </div>
+        </div>
+        <p class="illuminate">
+        Prior to my transition to library work, I worked in technology support here at UNK. This job entailed both end-user support and maintenance of technology in classrooms, labs, etc. The College of Natural &amp; Social Sciences was the largest division on campus, including faculty and equipment in four buildings and thirteen departments. I administered virtually all the hardware and software in the college. One of my most significant accomplishments in this position was systematizing the process of deploying and redeploying computers. In an organization this large, equipment turnover is a constant challenge. Through the procedures I developed, this was accomplished much more efficiently and reliably.
+        </p>
     </main>
     <footer>
-        <p>&copy; Copyright 2021 Matt McDowall. [ mlm4ft@mail.missouri.edu ]</p>
+        <p>&copy; Copyright 2021 Matt McDowall. [&nbsp;<a href="mailto:mlm4ft@mail.missouri.edu">mlm4ft@mail.missouri.edu</a>&nbsp;]</p>
     </footer>
 </body>
 </html>

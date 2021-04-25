@@ -10,6 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 
+
 /*     GLOBAL     */
 
 body {
@@ -20,6 +21,7 @@ body {
     font-family: Bitter, Georgia, serif;
     line-height: 1.45em;
 }
+
 
 /*     SEMANTIC ELEMENTS     */
 
@@ -32,6 +34,11 @@ footer {
     margin-top: 2em;
     text-align: center;
 }
+    footer a {
+        color: inherit;
+        font: inherit;
+        letter-spacing: inherit;
+    }
 
 header {
     position: sticky;
@@ -45,7 +52,7 @@ main p {
     hyphens: auto;
     margin:0;
 }
-    main p:first-of-type::first-letter {
+    main p:first-of-type::first-letter, p.illuminate::first-letter {
         font: 700 2em "Orelega One",Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
         padding:2px 5px;
         margin-right:6px;
@@ -56,7 +63,7 @@ main p {
         border: 1px solid #643719;
         border-radius: 2px;
     }
-    main p:not(:first-of-type) {
+    main p:not(:first-of-type):not(.illuminate) {
         text-indent: 2em;
     }
 
@@ -93,13 +100,18 @@ h1 {
     border-bottom: 6px solid #643719;
     border-radius: .1em;
 }
+   @media screen and (max-width: 600px) { /*roughly where it starts line-breaking my name*/
+        h1 {
+            font-size: calc(1em + 7.5vw)
+        }
+    }
 
 h2 {
     color: #643719;
     font: 700 2em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
 }
 
-img {
+img:not(.icon) {
     border-radius: .3em;
     border: 2px solid #643719;
     box-shadow: 4px 4px 6px #2f392c;
@@ -112,3 +124,23 @@ span.bshift {
     span.bshift:hover {
         vertical-align: text-bottom;
     }
+
+
+/*     CLASSES     */
+.exp_head {
+    margin: 1.5em 0 .5em;
+    border-bottom: 1pt solid #809e76;
+    border-top: 2pt solid #809e76;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}

@@ -1,11 +1,11 @@
-ul.navbar {
+ul.iconbar {
     padding-inline-start: 0;
 }
-    ul.navbar li {
+    ul.iconbar li {
         display: inline-block;
         list-style-type: none;
         padding-right: 1em;
     }
-        ul.navbar li a {
+        ul.iconbar li a {
             color: inherit;
         }

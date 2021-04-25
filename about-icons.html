@@ -5,31 +5,111 @@
    <title>About Me</title>
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="nav.css">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <style>
+   @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+   @media screen and (min-width: 970px) { /*full size*/
+       #gridwrap {
+           display: grid;
+           grid-gap: 20px;
+           grid-template-columns: 3fr 2fr;
+           grid-template-rows: 1fr;
+       }
+           #gridwrap aside {
+               display: grid;
+               grid-gap: 10px;
+               grid-template-columns: 1fr;
+               grid-template-rows: 400px 1fr;
+           }
+   }
+
+   @media screen and (max-width: 969px) { /*tablet*/
+       #gridwrap {
+           display: grid;
+           grid-gap: 20px;
+           grid-template-columns: 1fr;
+           grid-template-rows: 2fr 1fr;
+       }
+           #gridwrap aside {
+               display: grid;
+               grid-gap: 30px;
+               grid-template-columns: 400px 1fr;
+               grid-template-rows: 1fr;
+           }
+
+       blockquote {
+           margin: auto 0;
+       }
+   }
+
+   @media screen and (max-width: 479px) { /*phone*/
+       #gridwrap {
+           display: grid;
+           grid-gap: 20px;
+           grid-template-columns: 1fr;
+           grid-template-rows: 2fr 1fr;
+       }
+           #gridwrap aside {
+               display: grid;
+               grid-gap: 10px;
+               grid-template-columns: 1fr;
+               grid-template-rows: 400px 1fr;
+           }
+
+       blockquote {
+           margin: auto 0;
+       }
+   }
+   </style>
 </head>
 <body>
     <header>
-        <h1>Matt M<span class="bshift">c</span>Dowall</h1>
+        <h1>Matt&nbsp;M<span class="bshift">c</span>Dowall</h1>
     </header>
     <nav>
-        <ul class="navbar">
-            <li><a href="index.html"><img src="gr-home.png" alt="Home"></a></li>
-            <li><a href="about.html"><img src="gr-about.png" alt="About me"></a></li>
-            <li><a href="#learn.html"><img src="gr-experience.png" alt="Experience"></a></li>
-            <li><a href="reflection.html"><img src="gr-reflection.png" alt="Personal reflection"></a></li>
-            <li><a href="#contact.html"><img src="gr-contact.png" alt="Contact me"></a></li>
+        <ul class="iconbar">
+            <li><a href="index.html"><img src="gr-home.png" class="icon" title="Home" alt="Home"></a></li>
+            <li><a href="about.html"><img src="gr-about.png" class="icon" title="About me" alt="About me"></a></li>
+            <li><a href="learn.html"><img src="gr-experience.png" class="icon" title="Experience" alt="Experience"></a>
+                <ul class="dropdown">
+                    <li><a href="learn.html#Job1">Systems Librarian</a></li>
+                    <li><a href="learn.html#Job2">Tech Svcs Asst</a></li>
+                    <li><a href="learn.html#Job3">IT Coordinator</a></li>
+                </ul>
+            </li>
+            <li><a href="reflection.html"><img src="gr-reflection.png" class="icon" title="Personal reflection" alt="Personal reflection"></a></li>
+            <li><a href="#contact.html"><img src="gr-contact.png" class="icon" title="Contact me" alt="Contact me"></a></li>
         </ul>
     </nav>
-    <main>
+<!--     <main>
         <h2>About me</h2>
         <blockquote><q>The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.</q><br />
         —Anaïs Nin</blockquote>
-        <p>I’m in the final semester of my program, and will graduate in May with a Master’s of Library and Information Science. My work for the MLIS has focused largely on systems administration and electronic resources. But I’ve also been very interested in the theoretical aspects of library work. I’ve spent a lot of time thinking about how libraries anchor their communities. I hope to continue pursuing that question throughout my career.</p>
-        <p>
+        <p>I am in the final semester of my program, and will graduate in May with a Master’s of Library and Information Science. My work for the MLIS has focused largely on systems administration and electronic resources. But I’ve also been very interested in the theoretical aspects of library work. I’ve spent a lot of time thinking about how libraries anchor their communities. I hope to continue pursuing that question throughout my career.</p>
+        <p style="text-indent:0; margin: 16px 0;">
         Please see <a href="McDowallResume.pdf">my résumé</a>.
         </p>
     </main>
+ -->
+ <main>
+     <h2>About me</h2>
+     <div id="gridwrap">
+         <aside>
+             <img src="https://raw.githubusercontent.com/mlm4ft/mlm4ft.github.io/5b7ebf9aa4ef4091b70ba680e9dce87e94219bfc/HeadshotBW.jpg">
+             <blockquote><q>The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.</q><br>
+             —Anaïs Nin</blockquote>
+         </aside>
+         <div id="copy">
+             <p>I am in the final semester of my program, and will graduate in May with a Master’s of Library and Information Science. My work for the MLIS has focused largely on systems administration and electronic resources. But I’ve also been very interested in the theoretical aspects of library work. I’ve spent a lot of time thinking about how libraries anchor their communities. I hope to continue pursuing that question throughout my career.</p>
+             <p style="text-indent:0; margin: 16px 0;">
+             Please see <a href="McDowallResume.pdf">my résumé</a>.
+             </p>
+         </div>
+     </div>
+ </main>
     <footer>
-        <p>&copy; Copyright 2021 Matt McDowall. [ mlm4ft@mail.missouri.edu ]</p>
+        <p>&copy; Copyright 2021 Matt McDowall. [&nbsp;<a href="mailto:mlm4ft@mail.missouri.edu">mlm4ft@mail.missouri.edu</a>&nbsp;]</p>
     </footer>
 </body>
 </html>
