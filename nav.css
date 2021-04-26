@@ -1,4 +1,70 @@
-nav ul.navbar {
+ul#iconbar {
+    display: flex;
+    padding: 0;
+}
+    ul#iconbar>li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0 .5em;
+    }
+        ul#iconbar>li:first-of-type {
+            padding-left: 0;
+        }
+        ul#iconbar li a {
+            color: inherit;
+        }
+    @media screen and (max-width: 600px) { /* rough width of icon bar */
+        ul#iconbar img {
+            width: 13vw;
+            height: 13vw;
+        }
+    }
+ul.dropdown {
+    display:none;
+    position:absolute;
+    width: 120%;
+    margin-left: -10%;
+    margin-top: 0;
+    padding: .3em;
+    padding-left: 0;
+    text-align: center;
+    left: 0;
+}
+/*    ul.dropdown>li {
+        display: block;
+        list-style-type: none;
+        padding: .25em;
+        border: 3px solid #f6f8f6;
+        border-radius: .3em;
+        font: 700 1em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
+        background-color: #643719;
+        color: #f6f8f6;
+    }
+*/
+    ul.dropdown>li {
+        display: block;
+        list-style-type: none;
+        padding: .25em;
+        margin: 5px 0;
+        /*border: 3px solid #f6f8f6;*/
+        /*border-radius: .3em;*/
+        font: 700 1em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
+        background-color: #f6f8f6;
+        color: #643719;
+        box-shadow: 2px 3px 6px #225315;
+    }
+ul#iconbar li:hover>ul {
+    display: block;
+}
+nav>ul li {
+    position: relative;
+}
+
+
+
+
+
+/*nav ul.navbar {
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -26,67 +92,17 @@ nav ul.navbar {
             color: inherit;
         }
 
-/* Drop-down menu */
-nav ul>li ul {
+*/
+
+/*nav ul>li ul {
     position: absolute;
     display: none;
-}
-nav>ul li {
-    position: relative;
-}
+}*/
 nav ul>li ul {
     position:absolute;
     margin-top:1.35em;
     display:none;
 }
 nav ul>li:hover>ul {
-    display: block;
-}
-
-
-
-ul.iconbar {
-    display: flex;
-    padding: 0;
-}
-    ul.iconbar>li {
-        display: inline-block;
-        list-style-type: none;
-        padding: 0 .5em;
-    }
-        ul.iconbar>li:first-of-type {
-            padding-left: 0;
-        }
-        ul.iconbar li a {
-            color: inherit;
-        }
-    @media screen and (max-width: 600px) { /* rough width of icon bar */
-        ul.iconbar img {
-            width: 13vw;
-            height: 13vw;
-        }
-    }
-ul.dropdown {
-    display:none;
-    position:absolute;
-    width: 120%;
-    margin-left: -10%;
-    margin-top: 0;
-    padding: .3em;
-    padding-inline-start: 0;
-    text-align: center;
-    left: 0;
-}
-    ul.dropdown>li {
-        display: block;
-        list-style-type: none;
-        padding: .25em;
-        border: 3px solid #f6f8f6;
-        border-radius: .3em;
-        font: 700 1em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
-        background-color: #643719;
-        color: #f6f8f6;
-    }
-ul.iconbar li:hover>ul {
     display: block;
 }
