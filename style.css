@@ -27,6 +27,7 @@ body {
 
 footer {
     background-color: #643719;
+    background-image: url("images/texture.png");
     border-radius: 2px;
     color: #f6f8f6;
     font: 500 .75em/2em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
@@ -131,6 +132,11 @@ img:not(.icon) {
     margin: 1.5em 0 .5em;
     border-bottom: 1pt solid #809e76;
     border-top: 2pt solid #809e76;
+}
+.footericon {
+    width: 1.5em;
+    vertical-align: -.25em;
+    margin: 0 .2em;
 }
 .row {
     display: flex;
