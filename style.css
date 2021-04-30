@@ -138,6 +138,10 @@ img:not(.icon) {
     vertical-align: -.25em;
     margin: 0 .2em;
 }
+    .footericon:hover {
+        width:2em;
+        vertical-align: -.5em;
+    }
 .row {
     display: flex;
     flex-direction: row;
