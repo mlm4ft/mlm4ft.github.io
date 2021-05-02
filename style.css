@@ -189,7 +189,7 @@ img:not(.icon) {
         /*vertical-align: revert;*/
         border: none;
     }
-    .icon { display: none; }
+    video, .icon { display: none; }
 
 
 }
