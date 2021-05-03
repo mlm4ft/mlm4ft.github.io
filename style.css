@@ -131,7 +131,16 @@ img:not(.icon) {
 .exp_head {
     margin: 1.5em 0 .5em;
     border-bottom: 1pt solid #809e76;
-    border-top: 2pt solid #809e76;
+    border-top: 4pt solid #809e76;
+    padding-top: .3em;
+}
+.floatleft {
+   margin: 0 1.25em 1em 0;
+   float: left;
+}
+.floatright {
+   margin: 0 0 1em 1.25em;
+   float: right;
 }
 .footericon {
     width: 1.5em;
