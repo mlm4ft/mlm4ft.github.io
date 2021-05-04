@@ -41,13 +41,6 @@ footer {
         letter-spacing: inherit;
     }
 
-header {
-    position: sticky;
-    top: 0;
-    background-color: #f6f8f6;
-    z-index:10;
-}
-
 main p {
     text-align: justify;
     hyphens: auto;
@@ -128,6 +121,12 @@ img:not(.icon) {
     .bshift:hover {
         vertical-align: text-bottom;
     }
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
 .exp_head {
     margin: 1.5em 0 .5em;
     border-bottom: 1pt solid #809e76;
@@ -157,11 +156,16 @@ img:not(.icon) {
     flex-wrap: wrap;
     width: 100%;
 }
-.col {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+
+
+/*     IDs     */
+
+#stickytop {
+    position: sticky;
+    top: 0;
+    background-color: #f6f8f6;
+    z-index:10;
+    width: 105%;
 }
 
 

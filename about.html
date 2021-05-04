@@ -20,7 +20,7 @@
                 display: grid;
                 grid-gap: 10px;
                 grid-template-columns: 1fr;
-                grid-template-rows: 400px 1fr;
+                grid-template-rows: 200px 1fr;
             }
     }
 
@@ -34,7 +34,7 @@
             #gridwrap aside {
                 display: grid;
                 grid-gap: 30px;
-                grid-template-columns: 400px 1fr;
+                grid-template-columns: 200px 1fr;
                 grid-template-rows: 1fr;
             }
 
@@ -54,7 +54,7 @@
                 display: grid;
                 grid-gap: 10px;
                 grid-template-columns: 1fr;
-                grid-template-rows: 400px 1fr;
+                grid-template-rows: 200px 1fr;
             }
 
         blockquote {
@@ -64,43 +64,45 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Matt&nbsp;M<span class="bshift">c</span>Dowall</h1>
-    </header>
-    <nav>
-        <ul id="iconbar">
-            <li><a href="index.html"><img src="gr-home.png" class="icon" title="Home" alt="Home"></a></li>
-            <li><a href="about.html"><img src="gr-about.png" class="icon" title="About me" alt="About me"></a></li>
-            <li><a href="learn.html"><img src="gr-experience.png" class="icon" title="Experience" alt="Experience"></a>
-                <ul class="dropdown">
-                    <li><a href="learn.html#Job1">Systems Librarian</a></li>
-                    <li><a href="learn.html#Job2">Tech Svcs Asst</a></li>
-                    <li><a href="learn.html#Job3">IT Coordinator</a></li>
-                </ul>
-            </li>
-            <li><a href="reflection.html"><img src="gr-reflection.png" class="icon" title="Personal reflection" alt="Personal reflection"></a></li>
-            <li><a href="#contact.html"><img src="gr-contact.png" class="icon" title="Contact me" alt="Contact me"></a></li>
-        </ul>
-    </nav>
+    <div id="stickytop">
+        <header>
+            <h1>Matt&nbsp;M<span class="bshift">c</span>Dowall</h1>
+        </header>
+        <nav>
+            <ul id="iconbar">
+                <li><a href="index.html"><img src="gr-home.png" class="icon" title="Home" alt="Home"></a></li>
+                <li><a href="about.html"><img src="gr-about.png" class="icon" title="About me" alt="About me"></a></li>
+                <li><a href="learn.html"><img src="gr-experience.png" class="icon" title="Experience" alt="Experience"></a>
+                    <ul class="dropdown">
+                        <li><a href="learn.html#Job1">Systems Librarian</a></li>
+                        <li><a href="learn.html#Job2">Tech Svcs Asst</a></li>
+                        <li><a href="learn.html#Job3">IT Coordinator</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html"><img src="gr-reflection.png" class="icon" title="Personal reflection" alt="Personal reflection"></a></li>
+                <li><a href="#contact.html"><img src="gr-contact.png" class="icon" title="Contact me" alt="Contact me"></a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
-        <h2>About me</h2>
-        <div id="gridwrap">
-            <aside>
-                <img src="https://raw.githubusercontent.com/mlm4ft/mlm4ft.github.io/5b7ebf9aa4ef4091b70ba680e9dce87e94219bfc/HeadshotBW.jpg" alt="Headshot image of me">
-                <blockquote><q>The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.</q><br>
-                —Anaïs Nin</blockquote>
-            </aside>
-            <div id="copy">
-                <p>I am in the final semester of my program, and will graduate in May with a Master’s of Library and Information Science. My work for the MLIS has focused largely on systems administration and electronic resources. But I’ve also been very interested in the theoretical aspects of library work. I’ve spent a lot of time thinking about how libraries anchor their communities. I hope to continue pursuing that question throughout my career.</p>
-                <p style="text-indent:0; margin: 16px 0;">
-                Please see <a href="McDowallResume.pdf" target="_blank">my résumé</a>, or watch my video résumé:
-                </p>
-                <video width="480" height="270" controls>
-                  <source src="http://mlm4ft.github.io/McDowall_Video_Resume.mp4" type="video/mp4">
-                  [Unfortunately, your browser does not support the video tag, so this video won’t be available to you.]
-                </video>
-            </div>
+    <h2>About me</h2>
+    <div id="gridwrap">
+        <aside>
+            <img src="https://raw.githubusercontent.com/mlm4ft/mlm4ft.github.io/5b7ebf9aa4ef4091b70ba680e9dce87e94219bfc/HeadshotBW.jpg" width="200" alt="Headshot image of me">
+            <blockquote><q>The possession of knowledge does not kill the sense of wonder and mystery. There is always more mystery.</q><br>
+            —Anaïs Nin</blockquote>
+        </aside>
+        <div id="copy">
+            <p>I am in the final semester of my program, and will graduate in May with a Master’s of Library and Information Science. My work for the MLIS has focused largely on systems administration and electronic resources. But I’ve also been very interested in the theoretical aspects of library work. I’ve spent a lot of time thinking about how libraries anchor their communities. I hope to continue pursuing that question throughout my career.</p>
+            <p style="text-indent:0; margin: 16px 0;">
+            Please see <a href="McDowallResume.pdf" target="_blank">my résumé</a>, or watch my video résumé:
+            </p>
         </div>
+    </div>
+            <video width="480" height="270" controls>
+              <source src="http://mlm4ft.github.io/McDowall_Video_Resume.mp4" type="video/mp4">
+              [Unfortunately, your browser does not support the video tag, so this video won’t be available to you.]
+            </video>
     </main>
     <footer>
         <p>&copy; Copyright 2021 Matt McDowall.<br>
