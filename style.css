@@ -144,7 +144,7 @@ img:not(.icon) {
 .footericon {
     width: 1.5em;
     vertical-align: -.25em;
-    margin: 0 .2em;
+    margin: 0 .5em;
 }
     .footericon:hover {
         width:2em;
