@@ -92,6 +92,7 @@ button {
     padding: .5em .8em;
     font: 700 .95em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
     border: 2px solid #225315;
+    border-radius: .3em;
 }
 
 caption {
@@ -126,6 +127,7 @@ img:not(.icon) {
 table {
     border: 2px solid #643719;
     border-spacing: 0;
+    border-radius: .3em;
     font-family: Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
 }
 
