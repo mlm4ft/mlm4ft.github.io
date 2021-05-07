@@ -25,6 +25,9 @@ body {
         body {
             margin-right: 5%;
         }
+        main p {
+            text-align: left !important;
+        }
     }
 
 
