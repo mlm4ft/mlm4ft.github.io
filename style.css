@@ -190,7 +190,7 @@ tfoot, thead {
 }
 .footericon {
     width: 1.5em;
-    vertical-align: -.25em;
+    vertical-align: -.3em;
     margin: 0 .5em;
 }
     .footericon:hover {
@@ -207,6 +207,20 @@ tfoot, thead {
 
 /*     IDs     */
 
+#footerlist {
+    display: flex;
+    list-style-type: none;
+    padding: .1em;
+    justify-content: center;
+}
+    #footerlist li {
+        margin-left: .5em;
+    }
+    @media screen and (max-width: 800px) { /*roughly where it starts line-breaking my name*/
+        #footerlist {
+            flex-direction: column;
+        }
+    }
 #stickytop {
     position: sticky;
     top: 0;
