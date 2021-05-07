@@ -21,6 +21,11 @@ body {
     font-family: Bitter, Georgia, serif;
     line-height: 1.45em;
 }
+    @media screen and (max-width: 1000px) {
+        body {
+            margin-right: 5%;
+        }
+    }
 
 
 /*     SEMANTIC ELEMENTS     */
