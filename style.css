@@ -125,12 +125,17 @@ img:not(.icon) {
 
 table {
     border: 2px solid #643719;
+    border-spacing: 0;
     font-family: Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
 }
 
 tbody tr:nth-child(odd) {
     background-color: #809e76;
     color: #f6f8f6;
+}
+
+td, th {
+    padding: 5px;
 }
 
 tfoot {
