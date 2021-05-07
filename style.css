@@ -188,6 +188,17 @@ tfoot, thead {
    margin: 0 0 1em 1.25em;
    float: right;
 }
+    @media screen and (max-width: 1000px) { /* move large images into column */
+        .floatleft, .floatright {
+            float: unset;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    @media screen and (max-width: 600px) { /* shrink large images */
+        .floatleft, .floatright {
+            width: 98%; /* relative to column. extra 2% is for box shadow */
+        }
+    }
 .footericon {
     width: 1.5em;
     vertical-align: -.3em;
