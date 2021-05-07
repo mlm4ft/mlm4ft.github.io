@@ -27,7 +27,7 @@ body {
 
 footer {
     background-color: #643719;
-    background-image: url("images/texture.png");
+    /*background-image: url("images/texture.png");*/
     border-radius: 2px;
     color: #f6f8f6;
     font: 500 .75em/2em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
@@ -86,6 +86,18 @@ blockquote {
         padding-left: .5em;
     }
 
+button {
+    background-color: #f6f8f6;
+    color: #225315;
+    padding: .5em .8em;
+    font: 700 .95em Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
+    border: 2px solid #225315;
+}
+
+caption {
+    text-align: left;
+}
+
 h1 {
     color: #225315;
     display: inline-block;
@@ -111,6 +123,25 @@ img:not(.icon) {
     box-shadow: 4px 4px 6px #2f392c;
 }
 
+table {
+    border: 2px solid #643719;
+    font-family: Raleway,Tahoma,"Trebuchet MS",Trebuchet,sans-serif;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #809e76;
+    color: #f6f8f6;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+tfoot, thead {
+    background-color: #643719;
+    color: #f6f8f6;
+    text-align: left;
+}
 
 /*     CLASSES     */
 

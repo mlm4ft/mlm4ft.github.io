@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Contact me</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="nav.css">
+   <style>
+    @media screen and (max-width: 479px) { /*phone*/
+        input, textarea {
+            width: 90%;
+        }
+        th, td {
+            display: block;
+        }
+        #goaway {
+            display: none;
+        }
+    }
+   </style>
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    <div id="stickytop">
+        <header>
+            <h1>Matt&nbsp;M<span class="bshift">c</span>Dowall</h1>
+        </header>
+        <nav>
+            <ul id="iconbar">
+                <li><a href="index.html"><img src="gr-home.png" class="icon" title="Home" alt="Home"></a></li>
+                <li><a href="about.html"><img src="gr-about.png" class="icon" title="About me" alt="About me"></a></li>
+                <li><a href="learn.html"><img src="gr-experience.png" class="icon" title="Experience" alt="Experience"></a>
+                    <ul class="dropdown">
+                        <li><a href="learn.html#Job1">Systems Librarian</a></li>
+                        <li><a href="learn.html#Job2">Tech Svcs Asst</a></li>
+                        <li><a href="learn.html#Job3">IT Coordinator</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html"><img src="gr-reflection.png" class="icon" title="Personal reflection" alt="Personal reflection"></a></li>
+                <li><a href="#contact.html"><img src="gr-contact.png" class="icon" title="Contact me" alt="Contact me"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <form action="mailto:mlm4ft@mail.missouri.edu?Subject=About%20your%20web%20portfolio" method="post" enctype="text/plain">
+            <table border="0" cellspacing="0" cellpadding="5">
+                <caption>
+                    <h2>Contact me</h2>
+                </caption>
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            Please fill in the form to contact me about this portfolio.
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td valign="top">
+                            <label for="firstname">First Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="firstname" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td valign="top">
+                            <label for="lastname">Last Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="lastname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="email">Email address</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="subject">Subject</label>
+                        </td>
+                        <td>
+                            <input type="text" id="subject" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="Message">Message</label>
+                        </td>
+                        <td>
+                            <textarea name="Message" id="Message" cols="40" rows="8" placeholder="Please enter your message here" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="goaway">&nbsp;</td>
+                        <td valign="top">
+                            <button type="submit">Send</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            Thank you for your feedback!
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </main>
+    <!--<footer>
+    <p>&copy; Copyright 2021 Matt McDowall.<br>
+    <a href="mailto:mlm4ft@mail.missouri.edu"><img src="images/email.png" alt="Email me" class="footericon icon">mlm4ft@mail.missouri.edu</a><br>
+    <img src="images/phone.png" alt="" class="footericon icon">888.888.8888</p>
+</footer>-->
+<footer>
+        <p>&copy; Copyright 2021 Matt McDowall. [&nbsp;<a href="mailto:mlm4ft@mail.missouri.edu">mlm4ft@mail.missouri.edu</a>&nbsp;]</p>
+    </footer>
+</body>
+</html>
