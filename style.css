@@ -94,6 +94,7 @@ blockquote {
         padding-left: .5em;
     }
 
+
 button {
     background-color: #f6f8f6;
     color: #225315;
@@ -241,6 +242,35 @@ tfoot, thead {
     width: 105%;
 }
 
+@media screen and (max-width: 969px) { /*tablet*/
+    aside {
+        flex-direction: column;
+    }
+
+    blockquote {
+        margin: 1em 0;
+        width: 440px; /* match the video minus padding */
+        font-size: 1.1em;
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 479px) { /*phone*/
+    blockquote {
+        margin: 1em 0;
+        width: unset;
+        font-size: 1em;
+    }
+        blockquote q {
+            margin-bottom: -.9em;
+        }
+}
+
+@media screen and (max-width: 650px) { /* responsive width for blockquote & video */
+    blockquote, video {
+        width: 90%;
+    }
+}
 
 /*     PRINT     */
 @media print {
