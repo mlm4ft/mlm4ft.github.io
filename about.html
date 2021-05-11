@@ -55,17 +55,50 @@
           [Unfortunately, your browser does not support the video tag, so this video won’t be available to you.]
         </video>
     </main>
-    <!--<footer>
-    <p>&copy; Copyright 2021 Matt McDowall.<br>
-    <a href="mailto:mlm4ft@mail.missouri.edu"><img src="images/email.png" alt="Email me" class="footericon icon">mlm4ft@mail.missouri.edu</a><br>
-    <img src="images/phone.png" alt="" class="footericon icon">888.888.8888</p>
-</footer>-->
-<footer>
+    <footer>
         <ul id="footerlist">
-    <li>&copy; Copyright 2021 Matt McDowall.</li>
-    <li><a href="mailto:mlm4ft@mail.missouri.edu"><img src="images/email.png" alt="Email me" class="footericon icon">mlm4ft@mail.missouri.edu</a></li>
-    <li><img src="images/phone.png" alt="" class="footericon icon">888.888.8888</li>
-</ul>
+            <li>&copy; Copyright 2021 Matt McDowall.</li>
+            <li><a href="mailto:mlm4ft@mail.missouri.edu"><img src="images/email.png" alt="Email me" class="footericon icon">mlm4ft@mail.missouri.edu</a></li>
+            <li><img src="images/phone.png" alt="" class="footericon icon">888.888.8888</li>
+        </ul>
     </footer>
+    <script>
+        // When the user scrolls down 50px from the top of the document, reconfigure the header a bit
+        // Built out from basic code found at w3schools:
+        //      https://www.w3schools.com/howto/howto_js_shrink_header_scroll.asp
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (screen.width >= 750) {  // Not going to actually make it responsive; leave narrow screens alone
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("stickytop").style.display = "flex";
+                document.getElementById("stickytop").style.justifyContent = "space-between";
+                document.getElementById("header").style.fontSize = "10px";
+                document.getElementById("iconbar").style.marginLeft = "1em";
+                document.getElementById("iconbar").style.marginRight = "25px";
+                Array.from(document.getElementsByClassName("icon")).forEach(
+                    function(icon) {
+                        icon.style.width = "40px";
+                        icon.style.height = "40px";
+                        icon.style.verticalAlign = "text-top";
+                    }
+                )
+              } else {
+                document.getElementById("stickytop").style.display = "unset";
+                document.getElementById("stickytop").style.justifyContent = "unset";
+                document.getElementById("header").style.fontSize = "unset";
+                document.getElementById("iconbar").style.marginLeft = "unset";
+                document.getElementById("iconbar").style.marginRight = "unset";
+                Array.from(document.getElementsByClassName("icon")).forEach(
+                    function(icon) {
+                        icon.style.width = "unset";
+                        icon.style.height = "unset";
+                        icon.style.verticalAlign = "unset";
+                    }
+                )
+              }
+            }
+        }
+    </script>
 </body>
 </html>

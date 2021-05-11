@@ -26,12 +26,12 @@
 </head>
 <body>
     <div id="stickytop">
-        <header>
+        <header id="header">
             <h1>Matt&nbsp;M<span class="bshift">c</span>Dowall</h1>
         </header>
         <nav>
             <ul id="iconbar">
-                <li><a href="index.html"><img src="gr-home.png" class="icon" title="Home" alt="Home"></a></li>
+                <li><a href="index.html"><img id="icon1" src="gr-home.png" class="icon" title="Home" alt="Home"></a></li>
                 <li><a href="about.html"><img src="gr-about.png" class="icon" title="About me" alt="About me"></a></li>
                 <li><a href="learn.html"><img src="gr-experience.png" class="icon" title="Experience" alt="Experience"></a>
                     <ul class="dropdown">
@@ -92,17 +92,50 @@
         Prior to my transition to library work, I worked in technology support here at UNK. This job entailed both end-user support and maintenance of technology in classrooms, labs, etc. The College of Natural &amp; Social Sciences was the largest division on campus, including faculty and equipment in four buildings and thirteen departments. I administered virtually all the hardware and software in the college. One of my most significant accomplishments in this position was systematizing the process of deploying and redeploying computers. In an organization this large, equipment turnover is a constant challenge. Through the procedures I developed, this was accomplished much more efficiently and reliably.
         </p>
     </main>
-    <!--<footer>
-    <p>&copy; Copyright 2021 Matt McDowall.<br>
-    <a href="mailto:mlm4ft@mail.missouri.edu"><img src="images/email.png" alt="Email me" class="footericon icon">mlm4ft@mail.missouri.edu</a><br>
-    <img src="images/phone.png" alt="" class="footericon icon">888.888.8888</p>
-</footer>-->
-<footer>
+    <footer>
         <ul id="footerlist">
-    <li>&copy; Copyright 2021 Matt McDowall.</li>
-    <li><a href="mailto:mlm4ft@mail.missouri.edu"><img src="images/email.png" alt="Email me" class="footericon icon">mlm4ft@mail.missouri.edu</a></li>
-    <li><img src="images/phone.png" alt="" class="footericon icon">888.888.8888</li>
-</ul>
+            <li>&copy; Copyright 2021 Matt McDowall.</li>
+            <li><a href="mailto:mlm4ft@mail.missouri.edu"><img src="images/email.png" alt="Email me" class="footericon icon">mlm4ft@mail.missouri.edu</a></li>
+            <li><img src="images/phone.png" alt="" class="footericon icon">888.888.8888</li>
+        </ul>
     </footer>
+    <script>
+        // When the user scrolls down 50px from the top of the document, reconfigure the header a bit
+        // Built out from basic code found at w3schools:
+        //      https://www.w3schools.com/howto/howto_js_shrink_header_scroll.asp
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (screen.width >= 750) {  // Not going to actually make it responsive; leave narrow screens alone
+              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("stickytop").style.display = "flex";
+                document.getElementById("stickytop").style.justifyContent = "space-between";
+                document.getElementById("header").style.fontSize = "10px";
+                document.getElementById("iconbar").style.marginLeft = "1em";
+                document.getElementById("iconbar").style.marginRight = "25px";
+                Array.from(document.getElementsByClassName("icon")).forEach(
+                    function(icon) {
+                        icon.style.width = "40px";
+                        icon.style.height = "40px";
+                        icon.style.verticalAlign = "text-top";
+                    }
+                )
+              } else {
+                document.getElementById("stickytop").style.display = "unset";
+                document.getElementById("stickytop").style.justifyContent = "unset";
+                document.getElementById("header").style.fontSize = "unset";
+                document.getElementById("iconbar").style.marginLeft = "unset";
+                document.getElementById("iconbar").style.marginRight = "unset";
+                Array.from(document.getElementsByClassName("icon")).forEach(
+                    function(icon) {
+                        icon.style.width = "unset";
+                        icon.style.height = "unset";
+                        icon.style.verticalAlign = "unset";
+                    }
+                )
+              }
+            }
+        }
+    </script>
 </body>
 </html>
