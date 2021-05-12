@@ -128,36 +128,36 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (screen.width >= 750) {  // Not going to actually make it responsive; leave narrow screens alone
-              if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                document.getElementById("stickytop").style.display = "flex";
-                document.getElementById("stickytop").style.justifyContent = "space-between";
-                document.getElementById("header").style.fontSize = "10px";
-                document.getElementById("iconbar").style.marginLeft = "1em";
-                document.getElementById("iconbar").style.marginRight = "25px";
-                Array.from(document.getElementsByClassName("icon")).forEach(
-                    function(icon) {
-                        icon.style.width = "40px";
-                        icon.style.height = "40px";
-                        icon.style.verticalAlign = "text-top";
-                    }
-                )
-              } else {
-                document.getElementById("stickytop").style.display = "unset";
-                document.getElementById("stickytop").style.justifyContent = "unset";
-                document.getElementById("header").style.fontSize = "unset";
-                document.getElementById("iconbar").style.marginLeft = "unset";
-                document.getElementById("iconbar").style.marginRight = "unset";
-                Array.from(document.getElementsByClassName("icon")).forEach(
-                    function(icon) {
-                        icon.style.width = "unset";
-                        icon.style.height = "unset";
-                        icon.style.verticalAlign = "unset";
-                    }
-                )
-              }
+    if (screen.width >= 750) {  // Not going to actually make it responsive; leave narrow screens alone
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("stickytop").style.display = "flex";
+        document.getElementById("stickytop").style.justifyContent = "space-between";
+        document.getElementById("header").style.fontSize = "10px";
+        document.getElementById("iconbar").style.marginLeft = "1em";
+        document.getElementById("iconbar").style.marginRight = "25px";
+        Array.from(document.querySelectorAll("nav .icon")).forEach(
+            function(icon) {
+                icon.style.width = "40px";
+                icon.style.height = "40px";
+                icon.style.verticalAlign = "text-top";
             }
-        }
-    </script>
+        )
+      } else {
+        document.getElementById("stickytop").style.display = "unset";
+        document.getElementById("stickytop").style.justifyContent = "unset";
+        document.getElementById("header").style.fontSize = "unset";
+        document.getElementById("iconbar").style.marginLeft = "unset";
+        document.getElementById("iconbar").style.marginRight = "unset";
+        Array.from(document.querySelectorAll("nav .icon")).forEach(
+            function(icon) {
+                icon.style.width = "unset";
+                icon.style.height = "unset";
+                icon.style.verticalAlign = "unset";
+            }
+        )
+      }
+    }
+}
+</script>
 </body>
 </html>

@@ -113,7 +113,7 @@
                 document.getElementById("header").style.fontSize = "10px";
                 document.getElementById("iconbar").style.marginLeft = "1em";
                 document.getElementById("iconbar").style.marginRight = "25px";
-                Array.from(document.getElementsByClassName("icon")).forEach(
+                Array.from(document.querySelectorAll("nav .icon")).forEach(
                     function(icon) {
                         icon.style.width = "40px";
                         icon.style.height = "40px";
@@ -126,7 +126,7 @@
                 document.getElementById("header").style.fontSize = "unset";
                 document.getElementById("iconbar").style.marginLeft = "unset";
                 document.getElementById("iconbar").style.marginRight = "unset";
-                Array.from(document.getElementsByClassName("icon")).forEach(
+                Array.from(document.querySelectorAll("nav .icon")).forEach(
                     function(icon) {
                         icon.style.width = "unset";
                         icon.style.height = "unset";
